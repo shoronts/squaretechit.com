@@ -556,10 +556,13 @@ ul.left-side li:first-child:hover, ul.left-side li:last-child:hover, ul.right-si
   color: #083B66;
   font-size: 22px;
   margin-right: 25px;
+  text-shadow: 1px 8px 10px rgba(0, 0, 0, 0.5);
+  background: transparent;
+  padding: 10px;
 }
 
 .form-group input{
-  padding: 10px 20px;
+  padding: 10px 10px;
   height: 35px;
   border: none;
   border-bottom: 2px solid #E78200;
@@ -576,8 +579,10 @@ ul.left-side li:first-child:hover, ul.left-side li:last-child:hover, ul.right-si
   border: 1px solid #E78200;
   background: rgba(245, 240, 240, 0.7);
   width: 300px;
-  margin-left: 50px;
+  margin-left: 70px;
   color: #083B66;
+  padding: 10px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .form-group button{
@@ -587,10 +592,11 @@ ul.left-side li:first-child:hover, ul.left-side li:last-child:hover, ul.right-si
   width: 300px;
   padding: 7px 20px;
   border-radius: 5px;
-  margin-left: 50px;
+  margin-left: 70px;
   color: #ffffff;
   font-size: 20px;
   font-weight: 800;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .form-group button:hover{
