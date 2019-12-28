@@ -1,0 +1,30 @@
+/* ========== Large Screen ========== */
+@media screen and (max-width:1366px){
+    .main-menu{
+        top: 240px;
+        right: 10px;
+    }
+
+    .container{
+        width: 1170px;
+    }
+}
+
+/* ========== small desktop ========== */
+
+@media screen and (max-width:1024px){
+    
+    .container{
+        width: 960px;
+    }
+
+    .section-banner{
+        width: 80%;
+    }
+
+    .small-content{
+        width: 300px;
+        left: 8%;
+        bottom: 20%;
+    }
+}
