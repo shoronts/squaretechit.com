@@ -568,7 +568,14 @@ ul.left-side li:first-child:hover, ul.left-side li:last-child:hover, ul.right-si
   border-bottom: 2px solid #E78200;
   background: transparent;
   width: 300px;
+  position: relative;
 }
+
+.form-group input:focus{
+  outline: none;
+  border-left: 1px solid #083B66;
+}
+
 
 .form-group input::placeholder{
   color: #083B66;
@@ -601,4 +608,16 @@ ul.left-side li:first-child:hover, ul.left-side li:last-child:hover, ul.right-si
 
 .form-group button:hover{
   color: #083B66;
+}
+
+.contact-bar{
+  background-color: #083B66;
+  height: 2px;
+  width: 50px;
+  margin-left: 260px;
+  display: block;
+}
+
+.get:hover span{
+  background-color: #E78200;
 }
