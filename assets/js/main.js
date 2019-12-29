@@ -14,29 +14,20 @@ $(document).ready(function(){
     //      $(this).addClass('visible');
     //  });
 
-    // Owl Carousel Active
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:1
-            },
-            1000:{
-                items:1
-            }
-        }
-    })
-    // Owl Carousel End   
 
-
-    var owl = $('.owl-carousel');
-    owl.owlCarousel();
-    // Go to the next item
-    $('#nav').click(function() {
-       owl.trigger('next.owl.carousel');
+    $('.form-group input').focus(function(e){
+        $(e.target).parent().children('.animate-border').animate({
+            height:'35px',
+            width: '300px'
+        },500)
+        
     })
+
+    $('.form-group input').focusout(function(){
+        $('.animate-border').animate({
+            height:'0px',
+            width: '0px'
+        },500)
+    })
+
 })
