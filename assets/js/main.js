@@ -9,6 +9,11 @@ $(document).ready(function(){
          $(this).addClass('visible');
      });
 
+    //  $('.about-animation').one('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend',
+    //  function(e) {
+    //      $(this).addClass('visible');
+    //  });
+
     // Owl Carousel Active
     $('.owl-carousel').owlCarousel({
         loop:true,
@@ -32,6 +37,6 @@ $(document).ready(function(){
     owl.owlCarousel();
     // Go to the next item
     $('#nav').click(function() {
-        owl.trigger('next.owl.carousel');
+       owl.trigger('next.owl.carousel');
     })
 })
