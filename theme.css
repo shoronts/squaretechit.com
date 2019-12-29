@@ -445,12 +445,24 @@ ul.left-side li:first-child:hover, ul.left-side li:last-child:hover, ul.right-si
   z-index: 1;
 }
 
-.service-animation{
-
+.owl-item.active .service-animation{
+  animation: service-section 1s 500ms both linear;
 }
 
 @keyframes service-section{
-  
+  0%{
+    transform: scale(0.4);
+    left: -500px;
+  }
+
+  50%{
+    transform: scale(0.4);
+    left: 0;
+  }
+
+  100%{
+    transform: scale(1);
+  }
 }
 
 .service-section::before{
@@ -606,6 +618,7 @@ ul.left-side li:first-child:hover, ul.left-side li:last-child:hover, ul.right-si
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .form-group i{
@@ -625,11 +638,23 @@ ul.left-side li:first-child:hover, ul.left-side li:last-child:hover, ul.right-si
   background: transparent;
   width: 300px;
   position: relative;
+  z-index: 999;
 }
+
 
 .form-group input:focus{
   outline: none;
-  border-left: 1px solid #083B66;
+}
+
+span.animate-border {
+  width: 0px;
+  height: 0px;
+  border: 1px solid #083B66;
+  position: absolute;
+  left: 33.3%;
+  top: 4%;
+  border-bottom: none;
+  z-index: 1;
 }
 
 
@@ -648,6 +673,13 @@ ul.left-side li:first-child:hover, ul.left-side li:last-child:hover, ul.right-si
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
+.form-group textarea:focus{
+  border: 1px solid #083B66;
+  outline: none;
+  box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
 .form-group button{
   background-color: #E78200;
   border: 1px solid #083B66;
@@ -660,11 +692,60 @@ ul.left-side li:first-child:hover, ul.left-side li:last-child:hover, ul.right-si
   font-size: 20px;
   font-weight: 800;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 9;
+}
+
+.form-group button::before{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  border: 3px solid transparent;
+  z-index: -1;
+}
+
+.form-group button::after{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  border: 3px solid transparent;
+  z-index: -1;
 }
 
 .form-group button:hover{
-  color: #083B66;
+  color: #ffffff;
+  background-color: #083B66;
+  transition: 0.4s;
 }
+
+/* .form-group button:hover::before{
+  height: 100%;
+  width: 100%;
+  border:3px solid #E78200;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 5px;
+  transition: height 0.5s linear,
+              width 0.5s linear 0.5s;
+}
+
+
+.form-group button:hover::after{
+  height: 100%;
+  width: 100%;
+  border:3px solid #E78200;
+  border-top: none;
+  border-left: none;
+  border-radius: 5px;
+  transition: height 0.5s linear,
+              width 0.5s linear 0.5s;
+} */
 
 .contact-bar{
   background-color: #083B66;
