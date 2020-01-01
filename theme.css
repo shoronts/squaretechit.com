@@ -950,6 +950,42 @@ span.animate-border {
   background-color: #E78200;
 }
 
+.partners{
+  display: flex;
+  /* justify-content: flex-end; */
+  /* width: 800px; */
+  margin: 50px 0 100px 0;
+  box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* .partners-button{
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+} */
+
+.partners-button i{
+  font-size: 50px;
+  color: #E78200;
+}
+
+.partners-button i:hover{
+  color: #083B66;
+  transition: 0.3s;
+}
+
+/* .partners-logo{
+  display: flex!important;
+  justify-content: flex-end!important;
+  width: 800px!important;
+} */
+
+.single-partners-logo{
+  height: 100px;
+  width: 200px;
+  /* display: inline-block; */
+}
+
 
 
 /* Third sedtion End */
